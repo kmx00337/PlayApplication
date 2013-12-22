@@ -8,7 +8,7 @@
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
 #---API---
-GET	/1.0/users/:user_name/products/:product_id	controllers.ProductsApi.getProduct(user_name:String, product_id:Int)
+GET	/1.0/users/:user_name/products/:product_id	controllers.ProductsApi.getProduct(user_name:String, product_id:Long, fields:String)
 
 
 
