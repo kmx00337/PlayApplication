@@ -4,6 +4,12 @@
 
 # Home page
 #GET     /                           controllers.Application.index()
-GET	/:id		controllers.UserApi.getProductsByGps(id:Int)
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+#---API---
+GET	/1.0/users/:user_name/products/:product_id	controllers.ProductsApi.getProduct(user_name:String, product_id:Int)
+
+
+
+

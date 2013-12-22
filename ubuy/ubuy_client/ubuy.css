@@ -51,29 +51,44 @@ table {
 
 
 #header {
-	margin: 0 auto;
+	margin: 0;
 	width: 100%;
 	height: 44px;
-	background-color: #3f4650;
-	color: 353944;
-	-webkit-box-shadow: 0px 0px 3px #151515;
+	border-bottom: 1px solid #151515;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3f4650), to(#292d33));
 }
 
 h1 {
 	text-align: center;
+	margin: auto;
 	font-family: 'Signika Negative', sans-serif;
-	font-size: 20px;
+	font-size: 25px;
 	color: #ffffff;
+	float: left;
 }
 
-p {
+#navi {
+	height: 44px;
+	width: 120px;
+	padding: 0;
+	margin: 0;
+}
+
+#navi li {
+	border-left: 1px solid #353944;
+	color: #EEEEEE;
+	font-weight: bold;
+	font-size: 13px;
 	font-family: 'Signika Negative', sans-serif;
-	text-align: center;
+	float: left;
+	width: 40%;
+	padding: 10;
+	margin: 10;
 }
 
 #container {
 	margin: 0;
-	padding: 20px 0 0 0;
+	padding: 10px 0 0 0;
 	width: 100%;
 	background-color: #ebecee;
 }
@@ -83,7 +98,7 @@ p {
 }
 
 #searchResultBlock {
-	width: 300px;
+	width: 306px;
 	margin: 0 auto;
 }
 
@@ -96,12 +111,30 @@ p {
 	margin: 20px 0 0 0;
 	height: 340px;
 	background: #ffffff;
-	-webkit-box-shadow: 0px 2px 2px #bfc0c1;
+	border-bottom: 1px solid #bfc0c1;
+	border-right: 1px solid #cccdce;
+	border-top: 1px solid #cccdce;
+	border-left: 1px solid #bfc0c1;
+	-webkit-box-shadow: 1px 1px 0.5px #bfc0c1;
+	-webkit-border-radius: 2px;
+}
 
+.imgContainer{
+	text-align: center;
+	vertical-align: middle;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .ListInner {
-	width: 100%;
-	margin: 10px;
+	width: 298px;
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4px;
+	background-color: #A9A9A9;
 }
 
