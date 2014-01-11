@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+ *    v2.0 | 20110126
+ *       License: none (public domain)
+ *       */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+#header {
+	margin: 0;
+	width: 100%;
+	height: 44px;
+	border-bottom: 1px solid #151515;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3f4650), to(#292d33));
+}
+
+#login {
+	height: 100%;
+	width: 25%;
+	padding: 0;
+	margin: auto 0 auto 0;
+    float: left;
+}
+
+#login li {
+    border-left: 1.5px solid #444b55;
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+
+#login p {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Signika Negative', sans-serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #EEEEEE;
+    position: absolute;   /* cf:http://tmlife.net/web/css/css-text-vertical-top-middle-bottom.html*/
+    top: 50%;
+    margin-top: -8px;
+}
+
+.title {
+    width: 25%;
+    margin-left: 37.5%;
+    margin-right: 12.5%; /*ログインのwidthとリンクして決める*/
+    float: left;
+}
+
+.title h1 {
+    font-size: 30px;
+    font-family: 'Signika Negative', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+#container {
+	margin: 0;
+	padding: 10px 0 0 0;
+	width: 100%;
+	background-color: #ebecee;
+}
+
+#result {
+
+}
+
+#searchResultBlock {
+	width: 306px;
+	margin: 0 auto;
+}
+
+#searchResultList{
+	margin: -20px auto;
+}
+
+#searchResultList li {
+	width: 100%;
+	margin: 20px 0 0 0;
+	height: 340px;
+	background: #ffffff;
+	border-bottom: 1px solid #bfc0c1;
+	border-right: 1px solid #cccdce;
+	border-top: 1px solid #cccdce;
+	border-left: 1px solid #bfc0c1;
+	-webkit-box-shadow: 1px 1px 0.5px #bfc0c1;
+	-webkit-border-radius: 2px;
+}
+
+.imgContainer{
+	text-align: center;
+	vertical-align: middle;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.ListInner {
+	width: 298px;
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4px;
+	background-color: #A9A9A9;
+}
+

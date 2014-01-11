@@ -6,6 +6,10 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Id;
 import javax.persistence.Column;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
+
 
 import play.db.ebean.Model;
 
@@ -16,24 +20,37 @@ import com.avaje.ebean.annotation.CreatedTimestamp;
 public class Products extends Model
 {
 	@Id
-	public Long product_id;
+	@OneToMany
+	@Column(name = "product_id")
+	public Long productId;
 
-	@Column(nullable = false, columnDefinition = "VARCHAR(255)")
-	public String image;
+	@ManyToOne
+	@JoinColumn(name = "category_id")
+	public Categories categories;
 
-	@Column(nullable = false)
+	@ManyToOne
+	@JoinColumn(name = "shop_id")
+	public Shops shops;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    public Users users;
+
+	@Column(name = "image_path")
+	public String imagePath;
+
+    @Column(name = "promo_word")
+    public String promoWord;
+
+	@Column(name = "price")
 	public Long price;
 
-	@Column(nullable = true, columnDefinition = "VARCHAR(255) DEFAULT NULL")
-	public String categoly;
-
-	@Column(nullable = true, columnDefinition = "VARCHAR(255) DEFAULT NULL")
+	@Column(name = "brand")
 	public String brand;
 
-	@Column(nullable = false)
+	@Column(name = "stock")
 	public Long stock;
 
-	@Column(nullable = false)
-	public Long shop_id;
-
+    public static Finder<Long, Products> finder = new Finder<Long, Products>(Long.class, Products.class);
 }
+
