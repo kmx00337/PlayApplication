@@ -23,7 +23,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
     text-decoration: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -51,18 +50,6 @@ table {
 
 
 /*********************
-General Settings
-*********************/
-
-.BoxSizing {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-/*********************
 header
 *********************/
 
@@ -73,16 +60,13 @@ header
     height: 40px;
     border-bottom: 1px solid #151515;
     background: -webkit-gradient(linear, left top, left bottom, from(#3f4650), to(#424242));
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
 }
 
 
 #Login {
     height: 100%;
     width: 20%;
+    padding: -1px;
     float: left;
 }
 
@@ -97,7 +81,7 @@ header
 
 
 #Login li:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#4A4A4A));
+    background: -webkit-gradient(linear, left top, left bottom, from(#424242), to(#2E2E2E));
 }
 
 #Login li p a {
@@ -113,7 +97,7 @@ header
 }
 
 #Login li p a:hover {
-    color: #FAFAFA;
+    color: #FFFFFF;
     text-shadow: 0 0px #ffffff;
 }
 
@@ -121,8 +105,9 @@ header
 #MyList {
     height: 100%;
     width: 20%;
+    padding: -1;
     float: left;
-    margin-left: 1.5%;
+    margin-left: 5.5%;
 }
 
 #MyList li {
@@ -136,7 +121,7 @@ header
 
 
 #MyList li:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#4A4A4A));
+    background: -webkit-gradient(linear, left top, left bottom, from(#424242), to(#2E2E2E));
 }
 
 #MyList li p a {
@@ -152,14 +137,14 @@ header
 }
 
 #MyList li p a:hover {
-    color: #FAFAFA;
+    color: #FFFFFF;
     text-shadow: 0 0px #ffffff;
 }
 
 .Title {
     width: 25%;
-    margin-left: 16.0%;
-    margin-right: 16.0%; /*ログインのwidthとリンクして決める*/
+    margin-left: 12.0%;
+    margin-right: 12.0%; /*ログインのwidthとリンクして決める*/
     float: left;
     font-weight: bold;
 }
@@ -179,7 +164,7 @@ Contetn
 
 #container {
     margin: 0;
-    padding: 60px 0 0 0;
+    padding: 10px 0 0 0;
     width: 100%;
     background-color: #ebecee;
 }
